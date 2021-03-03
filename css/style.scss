@@ -1,0 +1,497 @@
+@import "_stylenull";
+@import url("https://../fonts.googleapis.com/css?family=PT+Sans&display=swap");
+@font-face {
+   font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+   src: url("../fonts/AkzidenzGroteskPro-Cn.eot");
+   src: local("☺"), url("../fonts/AkzidenzGroteskPro-Cn.woff") format("woff"),
+      url("../fonts/AkzidenzGroteskPro-Cn.ttf") format("truetype"),
+      url("../fonts/AkzidenzGroteskPro-Cn.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: "Conv_BebasNeue-Regular";
+   src: url("../fonts/BebasNeue-Regular.eot");
+   src: local("☺"), url("../fonts/BebasNeue-Regular.woff") format("woff"),
+      url("../fonts/BebasNeue-Regular.ttf") format("truetype"), url("../fonts/BebasNeue-Regular.svg") format("svg");
+   font-weight: normal;
+   font-style: normal;
+}
+body {
+   min-width: 1365px;
+}
+.wrapper {
+   min-height: 100vh;
+   max-width: 1365px;
+   width: 100%;
+   margin: 0 auto;
+}
+.container {
+   margin: 0 auto;
+   max-width: 875px;
+   width: 100%;
+}
+header > .container {
+   display: flex;
+   flex-direction: column;
+   padding: 30px 0 0 0;
+}
+.header__row {
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   &:first-child .VcentralBlock {
+      transform: translateX(3%);
+   }
+
+   & p {
+   }
+}
+.leftBlock {
+   flex: 1 1 10%;
+}
+
+.VcentralBlock {
+   text-align: center;
+   flex: 1 1 73%;
+
+   color: #000000;
+   font-family: Bebas;
+   font-size: 8px;
+   font-weight: 400;
+   line-height: 25px;
+   text-transform: uppercase;
+   /* Text style for "NY" */
+   letter-spacing: 8px;
+   /* Text style for "C'S" */
+   span {
+      letter-spacing: 2.72px;
+   }
+   img {
+      transform: translateY(-30%);
+   }
+}
+
+.VrightBlock {
+   flex: 1 1 17%;
+
+   &:first-child {
+      a {
+         color: black;
+      }
+
+      font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 25px;
+      text-transform: uppercase;
+      text-decoration: underline;
+      text-align: right;
+   }
+}
+.Clang {
+   display: flex;
+   // width: 20%;
+   // flex: 1 1 auto;
+   justify-content: space-evenly;
+   a {
+      color: #000000;
+      font-family: Bebas;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 25px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: underline;
+   }
+}
+
+.header__row-menu {
+   color: #000000;
+   font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+   text-transform: uppercase;
+   letter-spacing: 1.5px;
+}
+.header__row:nth-child(2) .VrightBlock .header__row-menu,
+.header__row:nth-child(2) .leftBlock .header__row-menu {
+   display: flex;
+   justify-content: space-between;
+
+   max-width: 100%;
+}
+
+.header__row:nth-child(2) {
+   padding: 30px 0;
+   .leftBlock {
+      flex: 1 1 80%;
+      .header__row-menu a {
+         color: #000000;
+      }
+   }
+   .VrightBlock {
+      flex: 1 1 90%;
+      .header__row-menu a {
+         color: #000000;
+      }
+   }
+}
+
+// .header__row:nth-child(3) {
+//    .VcentralBlock p {
+//       // transform: translateX(-3%);
+//    }
+// }
+.order {
+}
+.VrightMenu {
+}
+.Vimgblock {
+}
+.content {
+   padding-top: 5vh;
+}
+.firstRow {
+   display: flex;
+   width: 100%;
+}
+.firstRow__left {
+   flex: 0 1 50%;
+   img {
+      object-fit: cover;
+      width: 100%;
+   }
+}
+.firstRow__right {
+   flex: 0 1 50%;
+   background-color: black;
+   padding-top: 10vh;
+
+   padding-left: 5%;
+}
+.firstRow__title {
+   max-width: 50%;
+   color: #ffffff;
+   font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+   font-size: 50px;
+   font-weight: 400;
+   line-height: 50px;
+   text-transform: uppercase;
+   /* Text style for "Private ," */
+   letter-spacing: 5px;
+   margin-bottom: 10%;
+}
+.firstRow__text {
+   color: #ffffff;
+   font-family: "PT Sans";
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+   margin-bottom: 10%;
+   max-width: 55%;
+}
+.firstRow__btnbox {
+   display: flex;
+   max-width: 52%;
+   justify-content: space-between;
+}
+.firstRow__button {
+   background-color: #ffffff;
+   color: #000000;
+}
+button {
+   width: 155px;
+   height: 50px;
+
+   font-family: Bebas;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+   text-transform: uppercase;
+   /* Text style for "Get a quot" */
+   letter-spacing: 1.5px;
+}
+.firstRow__viewmenus {
+   color: #fffffe;
+   transform: translateY(20%);
+}
+.viewmenus {
+   font-family: Bebas;
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+   text-decoration: underline;
+   text-transform: uppercase;
+   /* Text style for "View menus" */
+   letter-spacing: 1.5px;
+}
+.secondRow {
+   padding-top: 10vh;
+}
+.secondRow__body {
+   display: flex;
+}
+.secondRow__button {
+   background-color: #000000;
+   color: #ffffff;
+}
+.secondRow__column {
+   &:nth-child(2) button,
+   &:nth-child(2) .item__viewmenus {
+      transform: translateY(27%);
+   }
+   &:first-of-type .item__text {
+      padding-top: 8%;
+   }
+}
+.column__image {
+}
+.column__item {
+}
+.item__title {
+   color: #000000;
+   font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+   font-size: 25px;
+   font-weight: 400;
+   line-height: 25px;
+   text-transform: uppercase;
+   /* Text style for "Private ," */
+   letter-spacing: 2.5px;
+   padding-top: 10%;
+}
+.item__text {
+   padding-top: 20%;
+   margin-bottom: 10%;
+}
+.item__button {
+   padding-top: 20%;
+}
+.item__viewmenus {
+   display: inline-block;
+   color: #000000;
+   padding-top: 10%;
+}
+
+.thirdRow {
+   padding-top: 12vh;
+}
+.thirdRow__up-row {
+   display: flex;
+}
+.thirdRow__up-left {
+   flex: 0 1 50%;
+
+   background-color: black;
+   padding-top: 10vh;
+   padding-left: 10%;
+   color: #ffffff;
+   font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+   font-size: 50px;
+   font-weight: 400;
+   line-height: 25px;
+   text-transform: uppercase;
+   /* Text style for "Why CHOOSE" */
+   letter-spacing: 5px;
+}
+.thirdRow__up-right {
+   flex: 0 1 50%;
+   position: relative;
+   img {
+      object-fit: cover;
+   }
+}
+.fourthRow {
+   background-color: #ebebeb;
+}
+.fourthRow__body {
+   // display: flex;
+   // flex-direction: column;
+   padding: 15vh 0 10vh 0;
+}
+.fourthRow__down-row {
+   margin: 0 -3%;
+   display: flex;
+
+   margin-bottom: 3%;
+   &:first-child {
+      // margin: -3% 0 0 0;
+      .fourthRow__down-column {
+         display: flex;
+         &:first-child {
+            padding-right: 1.5%;
+            .column__img {
+               background: url("/img/Flower.jpg") no-repeat;
+            }
+         }
+         &:last-child {
+            padding-left: 1.5%;
+            .column__img {
+               background: url("/img/clock.png") no-repeat;
+            }
+         }
+      }
+   }
+   &:last-child {
+      margin-bottom: 0;
+      .fourthRow__down-column {
+         &:first-child {
+            padding-right: 1.5%;
+            .column__img {
+               background: url("/img/leaf.png") no-repeat;
+            }
+         }
+         &:last-child {
+            padding-left: 1.5%;
+            .column__img {
+               background: url("/img/bage.png") no-repeat;
+            }
+         }
+      }
+   }
+}
+.fourthRow__down-column {
+   display: flex;
+   flex: 0 1 50%;
+}
+
+.column__img {
+   width: 100px;
+   height: 100px;
+   flex: 0 1 25%;
+   // &:first-of-type {
+   //    background: url("/img/Flower.jpg") no-repeat;
+   // }
+   // &:nth-of-type(2) {
+   //    background: url("/img/clock.png") no-repeat;
+   // }
+   // &:first-child {
+   //    background: url("/img/leaf.png") no-repeat;
+   // }
+   // &:last-of-type {
+   //    background: url("/img/bage.png") no-repeat;
+   // }
+}
+.column__body {
+   flex: 0 1 75%;
+   padding-left: 3%;
+}
+.column__title {
+   color: #000000;
+   font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+   font-size: 25px;
+   font-weight: 400;
+   line-height: 25px;
+   text-transform: uppercase;
+   /* Text style for "Always fre" */
+   letter-spacing: 2.5px;
+}
+.column__text {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+}
+.lastBlock {
+   padding-top: 5%;
+}
+.lastBlock__sayhello {
+   padding-bottom: 10vh;
+   p {
+      color: #000000;
+      font-family: "Conv_AkzidenzGroteskPro-CnConv_AkzidenzGroteskPro-Cn";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 25px;
+      text-transform: uppercase;
+      /* Text style for "Say hello" */
+      letter-spacing: 5px;
+      margin-bottom: 5%;
+   }
+}
+.lastBlock__top {
+   display: flex;
+   justify-content: space-between;
+}
+.lastBlock__contacts {
+   display: flex;
+   justify-content: space-between;
+   padding-bottom: 1vh;
+   ul {
+      li > a {
+         color: #000000;
+         font-family: "PT Sans";
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 25px;
+      }
+      li > a i.fa {
+         transform: translate(-5px, 0);
+      }
+   }
+   &:first-child {
+      flex: 1 1 50%;
+      & ul {
+         height: 7vh;
+
+         display: flex;
+         flex-direction: column;
+         justify-content: space-between;
+      }
+   }
+   &:last-child {
+      // flex: 1 1 50%;
+
+      height: 7vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+   }
+   & ul {
+      display: flex;
+      justify-content: space-between;
+   }
+}
+
+.lastBlock__bottom {
+   display: flex;
+   width: 100%;
+}
+.lastBlock__left {
+   flex: 1 1 50%;
+   img {
+      object-fit: cover;
+      width: 100%;
+   }
+}
+
+.lastBlock__right {
+   flex: 1 1 50%;
+   flex: 0 1 50%;
+   background-color: black;
+   padding-top: 10vh;
+
+   padding-left: 5%;
+}
+footer {
+   width: 100%;
+}
+footer span {
+   color: #4d4d4d;
+   font-family: "PT Sans";
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 25px;
+   padding-right: 20%;
+   /* Text style for "Terms & Co" */
+   span {
+      text-decoration: underline;
+   }
+}
+footer img {
+   transform: scale(0.75) translateY(-3vh);
+}
